@@ -1,16 +1,15 @@
-### Hi there 👋
+### Hi there I'm Vinyl Davyl 👋
 
-<!--
-**Vinyl-Davyl/Vinyl-Davyl** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Not just your Ordinary DEV!!
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+   ✨ Why chase, when I'm the Catch..
+   Welcome to my library✨
+- ✨ Open-minded Developer 
+- 🔭 Working hard to improve my emotional intelligence
+- 🌱 I’m currently learning alot of things rn
+- 👯 I’m looking to collaborate with other Devs and contribute to open source
+- 🤔 7billion people in this world and nobody's got super-powers, !=
+- 💬 Ask me about anything
+- 📫 Is there a Gig? Or an Urgent deal? Hit me up through my mail, twitter or linkedin
+- 😄 Pronouns: He/Him
+- ⚡ Drive: maybe, we are supposed to break, so that through the cracks our flowers can grow
