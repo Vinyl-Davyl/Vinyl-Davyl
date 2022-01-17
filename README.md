@@ -12,4 +12,4 @@
 - 💬 Ask me about anything
 - 📫 Is there a Gig? Or an Urgent deal? Hit me up through my mail, twitter or linkedin
 - 😄 Pronouns: He/Him
-- ⚡ Drive: maybe, we are supposed to break, so that through the cracks our flowers can grow
+- ⚡ Drive: Maybe, we are supposed to break, so that through the cracks our flowers can grow
