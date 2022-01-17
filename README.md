@@ -8,7 +8,6 @@
 - 🔭 Working hard to improve my emotional intelligence
 - 🌱 I’m currently learning alot of things rn
 - 👯 I’m looking to collaborate with other Devs and contribute to open source
-- 🤔 7billion people in this world and nobody's got superpowers, !=
 - 💬 Ask me about anything
 - 📫 Is there a Gig? Or an Urgent deal? Hit me up through my mail, twitter or linkedin
 - 😄 Pronouns: He/Him
