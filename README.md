@@ -2,7 +2,7 @@
 
 ### Not just your Ordinary DEV!!
 
-   ✨ Why chase, when I'm the Catch...
+   ✨ Why chase, when I'm the Catch....
    Welcome to my library✨
 - ✨ Open-minded Developer 
 - 🔭 Working hard to improve my emotional intelligence
