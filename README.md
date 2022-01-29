@@ -1,6 +1,6 @@
 ### Hi there, I'm Vinyl Davyl 👋
 
-### Not just your Ordinary DEV!!
+### Not just your Ordinary DEV!
 
    ✨ Why chase, when I'm the Catch....
    Welcome to my library✨
