@@ -76,7 +76,7 @@ while(dev.isCoding() && dev.isStuck())
 
 ### Not just your Ordinary DEV!
 
-- ✨ Why chase, when I'm the Catch.... 
+- ✨ Why chase, when I'm the Catch...
 - 🔭 Working hard to improve my emotional intelligence
 - 🌱 I’m currently learning alot of things rn
 - 👯 Looking to collaborate with other Devs and contribute more to open source
