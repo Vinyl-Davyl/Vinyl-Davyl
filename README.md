@@ -15,7 +15,7 @@
   <img align="right"  alt="Vinyl Davyl - DEV" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" width="22px">
 </a>
 <!--<a href="">
-  <img align="right" alt="Chiraag Kakar - Codechef" width="22px" src="https://api.iconify.design/simple-icons:codechef.svg?color=%2379553A"/>
+  <img align="right" alt="Codechef" width="22px" src="https://api.iconify.design/simple-icons:codechef.svg?color=%2379553A"/>
 </a>-->
 <a href="https://instagram.com/">
   <img align="right" alt="Vinyl Davyl- Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"/>
