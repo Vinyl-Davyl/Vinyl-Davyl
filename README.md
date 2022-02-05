@@ -17,7 +17,7 @@
 <!--<a href="">
   <img align="right" alt="Codechef" width="22px" src="https://api.iconify.design/simple-icons:codechef.svg?color=%2379553A"/>
 </a>-->
-<a href="https://instagram.com/">
+<a href="https://www.instagram.com/vinyl_davyl/">
   <img align="right" alt="Vinyl Davyl- Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"/>
 </a>
 <a href="https://twitter.com/Vinylchi">
