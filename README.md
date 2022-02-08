@@ -11,7 +11,7 @@
 <a href="https://www.linkedin.com/in/david-okononfua-a88a1a1a8/">
   <img align="right" alt="VinylDavyl - LinkedIn" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
 </a>
-<a href="https://dev.to/">
+<a href="https://vinyldavyl.hashnode.dev">
   <img align="right"  alt="Vinyl Davyl - DEV" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" width="22px">
 </a>
 <!--<a href="">
