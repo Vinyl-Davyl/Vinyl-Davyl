@@ -24,7 +24,7 @@
   <img align="right" alt="Vinyl Davyl - Twitter" width="22px" src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg"/>
 </a>
 <a href="https://vinyldavyl">
-  <img align="right" alt="Vinyl Davyl - Facebook" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg"/>
+  <img align="right" alt="Vinyl Davyl - WhatsApp" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/whatsapp.svg"/>
 </a>
 <br/>
 <br/>
