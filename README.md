@@ -18,12 +18,12 @@
   <img align="right" alt="Vinylchi" width="22px" src="https://api.iconify.design/simple-icons:codechef.svg?color=%2379553A"/>
 </a>-->
 <a href="https://www.instagram.com/vinyl_davyl/">
-  <img align="right" alt="Vinyl Davyl- Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"/>
+  <img align="right" alt="Vinyl Davyl- IG" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"/>
 </a>
 <a href="https://twitter.com/Vinylchi">
   <img align="right" alt="Vinyl Davyl - Twitter" width="22px" src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg"/>
 </a>
-<a href="https://wa:+2349122307761">
+<a href="https://wa: +2349122307761">
   <img align="right" alt="Vinyl Davyl - WhatsApp" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/whatsapp.svg"/>
 </a>
 <br/>
