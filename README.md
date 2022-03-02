@@ -37,7 +37,7 @@ document.write("Hello World");
 
 var status = 
 { 
-  learning : [Php, ExpressJs],
+  learning : [Php, ExpressJs, NuxtJs],
   interests: [Web3, Solidity, Opensource]
 }
 
