@@ -21,7 +21,7 @@
   <img align="right" alt="Vinyl Davyl- Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"/>
 </a>
 <a href="https://twitter.com/Vinylchi">
-  <img align="right" alt="Vinyl Davyl - Twitters" width="22px" src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg"/>
+  <img align="right" alt="Vinyl Davyl - Twitter" width="22px" src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg"/>
 </a>
 <a href="https://wa.me/2349122307761">
   <img align="right" alt="Vinyl Davyl - Whatsapp" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/whatsapp.svg"/>
