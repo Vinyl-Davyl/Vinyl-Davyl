@@ -1,7 +1,7 @@
 
 
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Vinyl-Davyl" alt="Vinyl-Davyl" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=Vinyl-Davyl" alt="Okononfua-David" /> </p>
 
 
 <p align="center">
