@@ -9,13 +9,13 @@
 </p>
 <h3 align="right">Connect with me :</h3>
 <a href="https://www.linkedin.com/in/david-okononfua-a88a1a1a8/">
-  <img align="right" alt="Viny-lDavyl - LinkedIn" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
+  <img align="right" alt="VinylDavyl - LinkedIn" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
 </a>
 <a href="https://vinyldavyl.hashnode.dev">
   <img align="right"  alt="Vinyl Davyl - Hashnode" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" width="22px">
 </a>
 <!--<a href="">
-  <img align="right" alt="VinylChii" width="22px" src="https://api.iconify.design/simple-icons:codechef.svg?color=%2379553A"/>
+  <img align="right" alt="VinylChi" width="22px" src="https://api.iconify.design/simple-icons:codechef.svg?color=%2379553A"/>
 </a>-->
 <a href="https://www.instagram.com/vinyl_davyl/">
   <img align="right" alt="Vinyl-Davyl- Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"/>
