@@ -37,7 +37,7 @@ document.write("Hello World");
 
 var status = 
 { 
-  learning : [Php, ExpressJs, NuxtJs],
+  learning : [ExpressJs, Redux, Typescript],
   interests: [Web3, Solidity, Opensource]
 }
 
@@ -45,7 +45,7 @@ const skills =
 {
   languages :[Javascript, Jquery, Python, MongoDB, Css],
   
-  frameworks:[Bootstrap, Tailwind, VueJs, FastAPI, ExpressJs],
+  frameworks:[Bootstrap, Tailwind, ReactJs, VueJs, FastAPI, ExpressJs],
   
   databases :[MySql, PostgreSQL, MongoDB],
   
