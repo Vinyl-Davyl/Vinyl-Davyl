@@ -37,7 +37,7 @@ document.write("Hello World");
 
 var status = 
 { 
-  learning : [NextJs, Redux, Typescript],
+  learning : [ExpressJs, Redux, Typescript],
   interests: [Web3, Solidity, Opensource]
 }
 
