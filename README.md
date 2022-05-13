@@ -47,9 +47,9 @@ const skills =
   
   frameworks:[Bootstrap, Tailwind, ReactJs, VueJs, FastAPI, ExpressJs],
   
-  databases :[MySql, PostgreSQL, MongoDB],
+  databases :[MySql, PostgreSQL, Firebase, MongoDB],
   
-  platforms :[Hashnode, Netlify, Vercel, Firebase, Heroku],
+  platforms :[Hashnode, Netlify, Vercel, Heroku],
   
   tools      :[Gitbash, Github, Gsap, Npm]
 }
