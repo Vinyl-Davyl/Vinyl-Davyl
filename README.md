@@ -51,7 +51,7 @@ const skills =
   
   platforms :[Hashnode, Netlify, Vercel, Heroku],
   
-  tools      :[Gitbash, Github, Gsap, Npm, Jest]
+  tools      :[Gitbash, Github, Gsap, Jest, Npm]
 }
 
 
