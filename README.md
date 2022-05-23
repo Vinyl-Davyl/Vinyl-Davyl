@@ -1,7 +1,7 @@
 
 
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Vinyl-Davyl" alt="Okononfua-David" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=Vinyl-Davyl" alt="Vinyl-Chi" /> </p>
 
 
 <p align="center">
@@ -51,7 +51,7 @@ const skills =
   
   platforms :[Hashnode, Netlify, Vercel, Heroku],
   
-  tools      :[Gitbash, Github, Gsap, Npm]
+  tools      :[Gitbash, Github, Gsap, Npm, Jest]
 }
 
 
