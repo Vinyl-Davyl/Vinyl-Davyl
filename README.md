@@ -12,7 +12,7 @@
   <img align="right" alt="VinylDavyl - LinkedIn" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
 </a>
 <a href="https://vinyldavyl.hashnode.dev">
-  <img align="right"  alt="Vinyl-Davyl " src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" width="22px">
+  <img align="right"  alt="Vinyl-Davyl - hashnode" src="https://github.com/dephraiim/hacknode/blob/345ccd76108f9cc43430e606ee7dcf3030646dbe/assets/hashnode.png" width="22px">
 </a>
 <!--<a href="">
   <img align="right" alt="Vinyl-Davyl" width="22px" src="https://api.iconify.design/simple-icons:codechef.svg?color=%2379553A"/>
