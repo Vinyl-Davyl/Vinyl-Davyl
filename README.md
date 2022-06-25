@@ -76,10 +76,10 @@ while(dev.isCoding() && dev.isStuck())
 
 ### Not just your Ordinary DEV!
 
-- ✨ Why chase, when I'm the Catch...
-- 🔭 Working hard to improve my emotional intelligence
-- 🌱 I’m currently learning alot of things rn
-- 👯 Looking to collaborate with other Devs and contribute more to open source
+- ✨ Why chase, When I'm the Catch...
+- 🔭 Working hard to Improve my Emotional Intelligence
+- 🌱 I’m currently Learning alot of things rn
+- 👯 Looking to Collaborate with other Devs and contribute more to OpenSource
 - 💬 Ask me about anything
 - 📫 Is there a Gig? Or an Urgent deal? Hit me up through my mail, twitter or linkedin
 - 😄 Pronouns: He/Him
