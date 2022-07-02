@@ -38,7 +38,7 @@ document.write("Hello World");
 var status = 
 { 
   learning : [ExpressJs, Redux, Typescript],
-  interests: [Web3, GraphQL, Solidity, Opensource]
+  interests: [Opensource, GraphQL, Gatsby, Solidity]
 }
 
 const skills = 
