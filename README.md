@@ -76,14 +76,14 @@ while(dev.isCoding() && dev.isStuck())
 
 ### Not just your Ordinary DEV!
 
-- ✨ Why chase, When I'm the Catch...
+- ✨ Why chase, When I'm the catch..
 - 🔭 Working hard to Improve my Emotional Intelligence
 - 🌱 I’m currently Learning alot of things rn
-- 👯 Looking to Collaborate with other Devs and contribute more to OpenSource
-- 💬 Ask me about whatever
+- 👯 Looking to Collaborate with other devs and contribute more to OpenSource
+- 💬 Ask me about Anything 
 - 📫 Is there a Gig? Or an Urgent deal? Hit me up through my mail, twitter or linkedin
 - 😄 Pronouns: He/Him
-- ⚡ Drive: Maybe, we are supposed to break, so that through the cracks our flowers can grow
+- ⚡ Drive: Maybe, we are suppose to break, so that through the cracks our flowers can grow
 
 
 ---
