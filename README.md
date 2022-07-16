@@ -43,7 +43,7 @@ var status =
 
 const skills = 
 {
-  languages :[Javascript, Jquery, Python, Css],
+  languages :[Javascript, Typescript, Python, Css],
   
   frameworks:[Bootstrap, Tailwind, Mui, ReactJs, VueJs, ExpressJs],
 
