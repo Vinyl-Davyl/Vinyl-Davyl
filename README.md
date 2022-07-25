@@ -9,7 +9,7 @@
 </p>
 <h3 align="right">Connect with me :</h3>
 <a href="https://www.linkedin.com/in/david-okononfua-a88a1a1a8/">
-  <img align="right" alt="VinylDavyl LinkedIn" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
+  <img align="right" alt="VinylDavyl - Linked-In" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
 </a>
 <a href="https://vinyldavyl.hashnode.dev">
   <img align="right"  alt="Vinyl-Davyl" src="https://github.com/dephraiim/hacknode/blob/345ccd76108f9cc43430e606ee7dcf3030646dbe/assets/hashnode.png" width="22px">
@@ -24,7 +24,7 @@
   <img align="right" alt="Vinyl-Davyl - Twitter" width="22px" src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg"/>
 </a>
 <a href="https://wa.me/2349122307761">
-  <img align="right" alt="Vinyl-Davyl - Whatsapp" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/whatsapp.svg"/>
+  <img align="right" alt="Vinyl-Davyl - What'sapp" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/whatsapp.svg"/>
 </a>
 <br/>
 <br/>
