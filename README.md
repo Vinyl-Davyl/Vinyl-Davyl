@@ -9,7 +9,7 @@
 </p>
 <h3 align="right">Connect with me :</h3>
 <a href="https://www.linkedin.com/in/david-okononfua-a88a1a1a8/">
-  <img align="right" alt="VinylDavyl - Linked-In" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
+  <img align="right" alt="VinylDavyl - Linked" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
 </a>
 <a href="https://vinyldavyl.hashnode.dev">
   <img align="right"  alt="Vinyl-Davyl" src="https://github.com/dephraiim/hacknode/blob/345ccd76108f9cc43430e606ee7dcf3030646dbe/assets/hashnode.png" width="22px">
