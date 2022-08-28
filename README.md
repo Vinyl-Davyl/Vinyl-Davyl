@@ -87,7 +87,7 @@ while(dev.isCoding() && dev.isStuck())
 
 
 ---
-<!--## 🏆GitHub Trophies-->
+<!--## 🏆Soon GitHub Trophies-->
 <!--![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4)-->
 
 <img alt="My Github stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-streak-stats.herokuapp.com/?user=Vinyl-Davyl&layout=compact" alt="Vinyl-Davyl" />
