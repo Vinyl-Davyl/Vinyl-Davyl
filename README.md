@@ -49,7 +49,7 @@ const skills =
 
   databases :[MySql, PostgreSQL, Firebase, MongoDB],
   
-  platforms :[Hashnode, Netlify, Vercel, Heroku],
+  platforms :[Hashnode, Medium, Netlify, Vercel, Heroku],
   
   tools     :[Gitbash, Github, Gsap, RapidAPI, Jest, Npm]
 }
