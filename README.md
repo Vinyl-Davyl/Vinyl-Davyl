@@ -78,8 +78,8 @@ while(dev.isCoding() && dev.isStuck())
 
 - ✨ Why Chase, When I'm the catch..
 - 🔭 Working hard to Improve my Emotional Intelligence
-- 🌱 I’m currently Learning alot of things rn
-- 👯 Looking to Collaborate with other devs and contribute more to OpenSource
+- 🌹  I’m currently Learning alot of things rn
+- 👨🏽‍🍳 Looking to Collaborate with other devs and contribute more to OpenSource
 - 💬 Ask me about Anything 
 - 📫 Is there a Gig? Or an Urgent deal? Hit me up through my mail, twitter or linkedin
 - 😄 Pronouns: He/Him
