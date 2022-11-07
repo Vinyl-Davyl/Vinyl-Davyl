@@ -85,7 +85,7 @@ while(dev.isCoding() && dev.isStuck())
 
 
 ---
-<!--## 🏆Soon GitHub Trophies / Stats-->
+<!--## 🏆Soon GitHub Trophies / Top Language stats soon-->
 <!--Soon![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4)-->
 <!--Soon! [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vinyl-Davyl&layout=compact&theme=radical)](https://github.com/Vinyl-Davyl/github-readme-stats)-->
 
