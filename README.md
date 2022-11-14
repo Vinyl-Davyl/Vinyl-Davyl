@@ -13,7 +13,7 @@
   <img align="right" src="https://github.com/dephraiim/hacknode/blob/345ccd76108f9cc43430e606ee7dcf3030646dbe/assets/hashnode.png" width="22px">
 </a>
 <!--<a href="">
-  <img align="right" alt="" width="22px" src="https://api.iconify.design/simple-icons:codechef.svg?color=%2379553A"/>
+  <img align="right" width="22px" src="https://api.iconify.design/simple-icons:codechef.svg?color=%2379553A"/>
 </a>-->
 <a href="https://www.instagram.com/vinyl_davyl/">
   <img align="right" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"/>
