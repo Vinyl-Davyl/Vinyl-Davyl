@@ -1,7 +1,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Vinyl-Davyl" alt="Vinyl-Chi" /> </p>
 
-
 <p align="center">
 <br><img src="https://github.com/chiraag-kakar/chiraag-kakar/blob/master/hadder.gif" width="280px"><br><br>
 </p>
@@ -83,9 +82,8 @@ while(dev.isCoding() && dev.isStuck())
 - 😄 Pronouns: He/Him
 - ⚡ Drive: Maybe, we are suppose to break, so that through the cracks our flowers can grow
 
-
 ---
-<!--## 🏆Soon GitHub Trophies / Top Language stats soon-->
+<!--## 🏆Coming Soon GitHub Trophies / Top Language stats soon-->
 <!--Soon![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4)-->
 <!--Soon! [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vinyl-Davyl&layout=compact&theme=radical)](https://github.com/Vinyl-Davyl/github-readme-stats)-->
 
