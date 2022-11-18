@@ -62,14 +62,12 @@ while(dev.isCoding() && dev.isStuck())
   dev.feelProfessional();
 }
 
-
 ```
 
  <img alt="My Github stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-stats.vercel.app/api?username=Vinyl-Davyl&count_private=true&show_icons=true&hide_border=true&theme=react" href="https://github.com/Vinyl-Davyl"/>
 
 
 ---
-
 
 ### Not just your Ordinary DEV!
 
@@ -83,7 +81,7 @@ while(dev.isCoding() && dev.isStuck())
 - ⚡ Drive: Maybe, we are suppose to break, so that through the cracks our flowers can grow
 
 ---
-<!--## 🏆Coming Soon GitHub Trophies / Top Language stats soon-->
+<!----## 🏆Coming Soon GitHub Trophies / Top Language stats---->
 <!--Soon![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4)-->
 <!--Soon! [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vinyl-Davyl&layout=compact&theme=radical)](https://github.com/Vinyl-Davyl/github-readme-stats)-->
 
