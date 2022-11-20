@@ -4,16 +4,13 @@
 <p align="center">
 <br><img src="https://github.com/chiraag-kakar/chiraag-kakar/blob/master/hadder.gif" width="280px"><br><br>
 </p>
-<h3 align="right">Connect with me :</h3>
+<h3 align="right"> Connect with me : </h3>
 <a href="https://www.linkedin.com/in/david-okononfua-a88a1a1a8/">
   <img align="right" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
 </a>
 <a href="https://vinyldavyl.hashnode.dev">
   <img align="right" src="https://github.com/dephraiim/hacknode/blob/345ccd76108f9cc43430e606ee7dcf3030646dbe/assets/hashnode.png" width="22px">
 </a>
-<!--<a href="">
-  <img align="right" width="22px" src="https://api.iconify.design/simple-icons:codechef.svg?color=%2379553A"/>
-</a>-->
 <a href="https://www.instagram.com/vinyl_davyl/">
   <img align="right" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"/>
 </a>
@@ -64,7 +61,7 @@ while(dev.isCoding() && dev.isStuck())
 
 ```
 
- <img alt="My Github stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-stats.vercel.app/api?username=Vinyl-Davyl&count_private=true&show_icons=true&hide_border=true&theme=react" href="https://github.com/Vinyl-Davyl"/>
+ <img alt="My Github-Stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-stats.vercel.app/api?username=Vinyl-Davyl&count_private=true&show_icons=true&hide_border=true&theme=react" href="https://github.com/Vinyl-Davyl"/>
 
 
 ---
