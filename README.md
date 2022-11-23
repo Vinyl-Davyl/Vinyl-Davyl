@@ -32,7 +32,7 @@ document.write("Hello World");
 var status = 
 { 
   learning : [NextJs, Redux, C],
-  interests: [Opensource, GraphQL, Gatsby, Solidity]
+  interests: [Opensource, GraphQL, Gatsby, Pinia, Solidity]
 }
 
 const skills = 
