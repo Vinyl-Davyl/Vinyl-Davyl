@@ -80,6 +80,8 @@ while(dev.isCoding() && dev.isStuck())
 - ⚡ Drive: Maybe, we are suppose to break, so that through the cracks our flowers can grow
 
 ---
+
+<!--## Coming Soon [![@VinylDavyl's Holopin board](https://holopin.io/api/user/board?user=vinyldavyl01)](https://holopin.io/@vinyldavyl01)-->
 <!----## 🏆Coming Soon GitHub Trophies / Top Language stats---->
 <!--Soon![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4)-->
 <!--Soon![![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vinyl-Davyl&layout=compact&theme=radical)](https://github.com/Vinyl-Davyl/github-readme-stats)-->
