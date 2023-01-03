@@ -33,7 +33,7 @@ document.write("Hello World");
 
 var status = 
 { 
-  learning : [NextJs, Redux],
+  learning : [NodeJs, NextJs],
   interests: [Opensource, GraphQL, Gatsby, Pinia, Solidity]
 }
 
