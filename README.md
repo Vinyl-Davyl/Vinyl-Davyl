@@ -1,6 +1,4 @@
 
-
-
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Vinyl-Davyl" alt="Vinyl-Chi" /> </p>
 
 <p align="center">
@@ -26,7 +24,6 @@
 <br/>
 <h2 align="center">Hi 👋, I'm Vinyl Davyl</h1>
 
-
 ```js
 
 document.write("Hello World");
@@ -41,7 +38,7 @@ const skills =
 {
   languages :[Javascript, Typescript, Python, Css],
   
-  frameworks:[Bootstrap, Tailwind, ReactJs, NextJs, VueJs, ExpressJs],
+  frameworks:[Mui, Tailwind, ReactJs, NextJs, VueJs, ExpressJs],
 
   databases :[MySql, PostgreSQL, Firebase, MongoDB],
   
