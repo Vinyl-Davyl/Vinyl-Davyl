@@ -73,7 +73,7 @@ while(dev.isCoding() && dev.isStuck())
 - 👨🏽‍🍳 Looking to collaborate with other devs and contribute more to OpenSource
 - 💬 Ask me about Anything 
 - 📫 Is there a Gig? Or an Urgent deal? Hit me up through my mail, twitter or linkedin
-- 🗿 Pronouns: He/Him/Jsx
+- 🗿 Pronouns: He/Him
 - ⚡ Drive: Maybe, we are suppose to break, so that through the cracks our flowers can grow
 
 ---
