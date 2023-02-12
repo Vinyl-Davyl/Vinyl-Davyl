@@ -80,8 +80,8 @@ while(dev.isCoding() && dev.isStuck())
 
 <!--## Coming Soon [![@VinylDavyl's Holopin board](https://holopin.io/api/user/board?user=vinyldavyl01)](https://holopin.io/@vinyldavyl01)-->
 <!----## 🏆Coming Soon GitHub Trophies / Top Language stats---->
-<!--Soon![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4)-->
-<!--Soon![![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vinyl-Davyl&layout=compact&theme=radical)](https://github.com/Vinyl-Davyl/github-readme-stats)-->
+<!--![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4)-->
+<!--![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vinyl-Davyl&layout=compact&theme=radical)](https://github.com/Vinyl-Davyl/github-readme-stats)-->
 
 <img alt="My Github stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-streak-stats.herokuapp.com/?user=Vinyl-Davyl&layout=compact" alt="Vinyl-Davyl"/>
 <img height="120" alt="Thanks for visiting my profile" width="100%" src="https://github.com/dibyendu415/dibyendu415/blob/master/marquee.svg" />
