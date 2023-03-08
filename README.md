@@ -30,7 +30,7 @@ document.write("Hello World");
 
 var status = 
 { 
-  learning : [NodeJs, NextJs],
+  learning : [AlotRn],
   interests: [Opensource, GraphQL, Gatsby, Solidity]
 }
 
