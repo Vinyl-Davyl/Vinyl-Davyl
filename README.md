@@ -61,7 +61,9 @@ while(dev.isCoding() && dev.isStuck())
 ```
 
  <img alt="My Github-Stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-stats.vercel.app/api?username=Vinyl-Davyl&count_private=true&show_icons=true&hide_border=true&theme=react" href="https://github.com/Vinyl-Davyl"/>
-
+<!--<a href="https://github.com/Vinyl-Davyl">
+    <img src="https://github-stats-alpha.vercel.app/api?username=Vinyl-Davyl&cc=22272e&tc=37BCF6&ic=fff&bc=0000">
+</a>-->
 
 ---
 
