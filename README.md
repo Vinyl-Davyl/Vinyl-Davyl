@@ -69,8 +69,8 @@ while(dev.isCoding() && dev.isStuck())
 ### The Nothing!
 
 -  ✨ Why chase, when I'm the catch..
--  🎍 Exploring the fine line between curiosity and creativity
--  👨🏽‍🍳 Collaborating with other devs whilst exploiting Opensource
+-  🎍 Curiosity or Creativity
+-  👨🏽‍🍳 Looking to collaborate with other devs whilst exploiting Opensource
 -  📫 Is there a Gig? Or an Urgent deal? Hit me up through my Mail, Twitter or Linkedin
 -  ⚡ Drive: Maybe, we are suppose to break, so through the cracks our flowers can grow
 - 💬  Before Vinyl, there was SirHolmes
