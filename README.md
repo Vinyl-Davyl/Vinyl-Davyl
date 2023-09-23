@@ -1,4 +1,3 @@
-
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Vinyl-Davyl" alt="Vinyl-Chi" /> </p>
 
 <p align="center">
@@ -28,29 +27,29 @@
 
 document.write("Hello World");
 
-var status = 
-{ 
+var status =
+{
   learning : [Alotrn],
   interests: [Opensource, GraphQL, Gatsby, Solidity]
 }
 
-const skills = 
+const skills =
 {
   languages :[Javascript, Typescript, Python, Css],
-  
+
   frameworks:[ReactJs, NextJs, VueJs, Astro, ExpressJs, NodeJs],
 
   databases :[MySql, PostgreSQL, Firebase, MongoDB],
-  
+
   platforms :[Hashnode, Medium, Netlify, Vercel, Heroku],
-  
+
   tools     :[Gitbash, Github, Gsap, RapidAPI, Jest]
 }
 
 
 Developer dev = new Developer(vinyl-davyl);
 
-while(dev.isCoding() && dev.isStuck())  
+while(dev.isCoding() && dev.isStuck())
 {
   dev.openBrowser();
   dev.openStackOverFlow();
@@ -73,12 +72,22 @@ while(dev.isCoding() && dev.isStuck())
 - 🔭 Working hard to Improve my Emotional Intelligence
 - 🎍 I’m currently learning alot of things rn
 - 👨🏽‍🍳 Looking to collaborate with other devs and contribute more to OpenSource
-- 💬 Ask me about Anything 
+- 💬 Ask me about Anything
 - 📫 Is there a Gig? Or an Urgent deal? Hit me up through my mail, twitter or linkedin
 - 🗿 Pronouns: He/Him
 - ⚡ Drive: Maybe, we are suppose to break, so that through the cracks our flowers can grow
 
 ---
+
+---
+
+### Latest Blog Posts
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
+---
+
 <!--## Coming Soon [![@VinylDavyl's Holopin board](https://holopin.io/api/user/board?user=vinyldavyl01)](https://holopin.io/@vinyldavyl01)-->
 <!----## 🏆Coming Soon GitHub Trophies / Top Language stats / Spotify ---->
 <!-- Soon ![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4)-->
@@ -86,5 +95,3 @@ while(dev.isCoding() && dev.isStuck())
 <!-- **🎧 My recently played** [![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=60c4w28s5vmzo03qrlssmief6&count=3)](https://open.spotify.com/user/k2sogigjc6sw1j7yxzzr3b78u) [![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=k2sogigjc6sw1j7yxzzr3b78u&count=3)](https://open.spotify.com/user/k2sogigjc6sw1j7yxzzr3b78u)-->
 <img alt="My Github stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-streak-stats.herokuapp.com/?user=Vinyl-Davyl&layout=compact" alt="Vinyl-Davyl"/>
 <img height="120" alt="Thanks for visiting my profile" width="100%" src="https://github.com/dibyendu415/dibyendu415/blob/master/marquee.svg" />
-
-
