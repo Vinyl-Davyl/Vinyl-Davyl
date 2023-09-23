@@ -77,10 +77,6 @@ while(dev.isCoding() && dev.isStuck())
 - 🗿 Pronouns: He/Him
 - ⚡ Drive: Maybe, we are suppose to break, so that through the cracks our flowers can grow
 
----
-
----
-
 ### Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
@@ -90,8 +86,6 @@ while(dev.isCoding() && dev.isStuck())
 - [Getting Started with Solidity, All you need to know &lpar;A Step by Step Guide&rpar;.](https://vinyldavyl.hashnode.dev/getting-started-with-solidity-all-you-need-to-know-a-step-by-step-guide)
 - [How to Create a Database in MongoDB Atlas and connect your Database to your Application &lpar;Step By Step&rpar;](https://vinyldavyl.hashnode.dev/how-to-create-a-database-in-mongodb-atlas-and-connect-your-database-to-your-application-step-by-step)
 <!-- BLOG-POST-LIST:END -->
-
----
 
 <!--## Coming Soon [![@VinylDavyl's Holopin board](https://holopin.io/api/user/board?user=vinyldavyl01)](https://holopin.io/@vinyldavyl01)-->
 <!----## 🏆Coming Soon GitHub Trophies / Top Language stats / Spotify ---->
