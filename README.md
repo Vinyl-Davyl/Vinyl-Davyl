@@ -66,18 +66,16 @@ while(dev.isCoding() && dev.isStuck())
 
 ---
 
-### Not just your Ordinary DEV!
+### The Nothing!
 
-- ✨ Why Chase, When I'm the catch..
-- 🔭 Working hard to Improve my Emotional Intelligence
-- 🎍 I’m currently learning alot of things rn
-- 👨🏽‍🍳 Looking to collaborate with other devs and contribute more to OpenSource
-- 💬 Ask me about Anything
-- 📫 Is there a Gig? Or an Urgent deal? Hit me up through my mail, twitter or linkedin
-- 🗿 Pronouns: He/Him
-- ⚡ Drive: Maybe, we are suppose to break, so that through the cracks our flowers can grow
-
-### Latest Blog Posts
+-  ✨ Why chase, when I'm the catch..
+-  👨🏽‍🍳 Looking to collaborate with other devs and contribute more to Opensource
+-  📫 Is there a Gig? Or an Urgent deal? Hit me up through my Mail, Twitter or Linkedin
+-  ⚡ Drive: Maybe, we are suppose to break, so that through the cracks our flowers can grow
+-  🎍 Curiousity or Creativity
+- 💬  Before Vinyl, there was SirHolmes
+  
+### Occasional ✒️ Piece
 
 <!-- BLOG-POST-LIST:START -->
 - [Understanding the Role of Husky, ESLint and Prettier: Reasons for Adoption and Implementation Guidelines](https://vinyldavyl.hashnode.dev/understanding-the-role-of-husky-eslint-and-prettier-reasons-for-adoption-and-implementation-guidelines)
@@ -86,11 +84,13 @@ while(dev.isCoding() && dev.isStuck())
 - [Getting Started with Solidity, All you need to know &lpar;A Step by Step Guide&rpar;.](https://vinyldavyl.hashnode.dev/getting-started-with-solidity-all-you-need-to-know-a-step-by-step-guide)
 - [How to Create a Database in MongoDB Atlas and connect your Database to your Application &lpar;Step By Step&rpar;](https://vinyldavyl.hashnode.dev/how-to-create-a-database-in-mongodb-atlas-and-connect-your-database-to-your-application-step-by-step)
 <!-- BLOG-POST-LIST:END -->
+---
+<br/>
 
-<!--## Coming Soon [![@VinylDavyl's Holopin board](https://holopin.io/api/user/board?user=vinyldavyl01)](https://holopin.io/@vinyldavyl01)-->
+<!----## [![@VinylDavyl's Holopin board](https://holopin.io/api/user/board?user=vinyldavyl01)](https://holopin.io/@vinyldavyl01) -->
 <!----## 🏆Coming Soon GitHub Trophies / Top Language stats / Spotify ---->
-<!-- Soon ![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4)-->
-<!-- Soon ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vinyl-Davyl&layout=compact&theme=radical)](https://github.com/Vinyl-Davyl/github-readme-stats)-->
+<!----## Soon ![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4) -->
+<!---- ## Soon ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vinyl-Davyl&layout=compact&theme=radical)](https://github.com/Vinyl-Davyl/github-readme-stats) -->
 <!-- **🎧 My recently played** [![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=60c4w28s5vmzo03qrlssmief6&count=3)](https://open.spotify.com/user/k2sogigjc6sw1j7yxzzr3b78u) [![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=k2sogigjc6sw1j7yxzzr3b78u&count=3)](https://open.spotify.com/user/k2sogigjc6sw1j7yxzzr3b78u)-->
 <img alt="My Github stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-streak-stats.herokuapp.com/?user=Vinyl-Davyl&layout=compact" alt="Vinyl-Davyl"/>
 <img height="120" alt="Thanks for visiting my profile" width="100%" src="https://github.com/dibyendu415/dibyendu415/blob/master/marquee.svg" />
