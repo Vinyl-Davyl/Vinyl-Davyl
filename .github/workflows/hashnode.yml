@@ -1,24 +1,14 @@
-name: "📚 latest Blog"
-
+name: Latest hashnde blog post workflow
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 * * * *" # Runs every hour, on the hour
-
+  schedule: # Run workflow automatically
+    - cron: '0 * * * *' # Runs every hour, on the hour
+  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
 jobs:
-  update_blogs:
-    name: "Latest Blog Post"
+  update-readme-with-hashnde-blog:
+    name: Update this repo's README with the latest hashnde blog posts
     runs-on: ubuntu-latest
     steps:
-      - name: "📥  Fetching Repository Contents"
-        uses: actions/checkout@main
-
-      - name: "📚  Hashnode Updater"
-        uses: "varunsridharan/action-hashnode-blog@1.1.1"
+      - uses: actions/checkout@v2
+      - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          USERNAME: "Vinyl-Davyl" # Hashnode Username
-          COUNT: 5 # MAX Visisble
-          STYLE: "blog-left"
-          BLOG_URL: "https://vinyldavyl.hashnode.dev/"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
