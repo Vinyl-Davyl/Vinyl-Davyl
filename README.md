@@ -37,7 +37,7 @@ const skills =
 {
   languages :[Javascript, Typescript, Python, Css],
 
-  frameworks:[ReactJs, NextJs, VueJs, Astro, ExpressJs, NodeJs, Tailwind],
+  frameworks:[ReactJs, NextJs, VueJs, Tailwind, Astro, ExpressJs, NodeJs],
 
   databases :[MySql, PostgreSQL, Firebase, MongoDB],
 
