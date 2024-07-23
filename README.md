@@ -27,36 +27,26 @@
 
 document.write("Hello World");
 
-var status =
-{
-  learning : [Alotrn],
-  interests: [Opensource, GraphQL, Gatsby, Solidity]
+var status = {
+  learning: ["Alotrn"],
+  interests: ["Open Source", "GraphQL", "Gatsby", "Solidity"]
 }
 
-const skills =
-{
-  languages :[Javascript, Typescript, Python, Css],
-
-  frameworks:[ReactJs, NextJs, VueJs, Tailwind, Astro, ExpressJs, NodeJs],
-
-  databases :[MySql, PostgreSQL, Firebase, MongoDB],
-
-  platforms :[Hashnode, Medium, Netlify, Vercel, Heroku],
-
-  tools     :[Gitbash, Github, Gsap, Docker, PrismaORM, Jest]
+const skills = {
+  languages: ["JavaScript", "TypeScript", "Python", "CSS"],
+  frameworks: ["ReactJs", "NextJs", "VueJs", "Tailwind", "Astro", "ExpressJs", "NodeJs"],
+  databases: ["MySQL", "PostgreSQL", "Firebase", "MongoDB"],
+  platforms: ["Hashnode", "Medium", "Netlify", "Vercel", "Heroku"],
+  tools: ["Gitbash", "GitHub", "Gsap", "Docker", "PrismaORM", "Jest"]
 }
 
-
-Developer dev = new Developer(vinyl-davyl);
-
-while(dev.isCoding() && dev.isStuck())
-{
-  dev.openBrowser();
-  dev.openStackOverFlow();
-  dev.pasteCodeInIde();
-  dev.feelProfessional();
+const professionalPhilosophy = {
+  mindset: "Continuous Learning and Improvement",
+  approach: "Collaborative and Open Source Minded",
+  goals: "Building Scalable and Performant Solutions"
 }
 
+console.log("Professional Philosophy:", professionalPhilosophy);
 ```
 
  <img alt="My Github-Stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-stats.vercel.app/api?username=Vinyl-Davyl&count_private=true&show_icons=true&hide_border=true&theme=react" href="https://github.com/Vinyl-Davyl"/>
