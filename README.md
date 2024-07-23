@@ -28,16 +28,20 @@
 document.write("Hello World");
 
 var status = {
-  learning: ["Alotrn"],
-  interests: ["Open Source", "GraphQL", "Gatsby", "Solidity"]
+  learning: [Alotrn],
+  interests: [Open Source, GraphQL, Gatsby, Solidity]
 }
 
 const skills = {
-  languages: ["JavaScript", "TypeScript", "Python", "CSS"],
-  frameworks: ["ReactJs", "NextJs", "VueJs", "Tailwind", "Astro", "ExpressJs", "NodeJs"],
-  databases: ["MySQL", "PostgreSQL", "Firebase", "MongoDB"],
-  platforms: ["Hashnode", "Medium", "Netlify", "Vercel", "Heroku"],
-  tools: ["Gitbash", "GitHub", "Gsap", "Docker", "PrismaORM", "Jest"]
+  languages: [JavaScript, TypeScript, Python],
+
+  frameworks: [ReactJs, NextJs, VueJs, Tailwind, Astro, ExpressJs, NodeJs],
+
+  databases: [MySQL, PostgreSQL, Firebase, MongoDB],
+
+  platforms: [Hashnode, Medium, Netlify, Vercel, Heroku],
+
+  tools: [Gitbash, GitHub, Gsap, Docker, PrismaORM, Jest]
 }
 
 const professionalPhilosophy = {
