@@ -64,7 +64,7 @@ console.log("Professional Philosophy:", professionalPhilosophy);
 
 -  ⚡ Drive: Maybe, we are suppose to break, so through the cracks our flowers can grow
 -  📫 Is there a Gig? Or an urgent deal? Hit me up through my Mail, Twitter or Linkedin
--  👨🏽‍🍳 Looking to collaborate with other devs whilst exploiting opensource
+-  👨🏽‍🍳 Looking to collaborate with other devs whilst exploring opensource
 -  💬 Before Vinyl, there was SirHolmes
 -  ✨ Why chase, when I'm the catch..
 -  🎍 Curiosity or Creativity!
