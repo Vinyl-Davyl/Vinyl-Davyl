@@ -62,12 +62,12 @@ console.log("Professional Philosophy:", professionalPhilosophy);
 
 ### The Nothing!
 
--  ✨ Why chase, when I'm the catch..
--  🎍 Curiosity or Creativity
--  👨🏽‍🍳 Looking to collaborate with other devs whilst exploiting Opensource
--  📫 Is there a Gig? Or an Urgent deal? Hit me up through my Mail, Twitter or Linkedin
 -  ⚡ Drive: Maybe, we are suppose to break, so through the cracks our flowers can grow
-- 💬  Before Vinyl, there was SirHolmes
+-  📫 Is there a Gig? Or an urgent deal? Hit me up through my Mail, Twitter or Linkedin
+-  👨🏽‍🍳 Looking to collaborate with other devs whilst exploiting opensource
+-  💬 Before Vinyl, there was SirHolmes
+-  ✨ Why chase, when I'm the catch..
+-  🎍 Curiosity or Creativity!
   
 ### Occasional ✒️ Piece
 
