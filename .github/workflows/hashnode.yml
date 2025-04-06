@@ -1,7 +1,7 @@
 name: Update README with Latest Blog Post
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight
+    - cron: "0 0 * * *" # Runs daily at midnight
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install requests
         run: pip install requests
@@ -38,7 +38,7 @@ jobs:
             }
           }
           """
-          
+
           response = requests.post('https://api.hashnode.com/', json={'query': query})
           data = response.json()
           
@@ -50,12 +50,7 @@ jobs:
                   content = f.read()
               
               # Prepare new blog section
-              blog_section = f"""## Latest Blog Post
-              
-          🔖 [{post['title']}](https://vinyldavyl.hashnode.dev/{post['slug']})
-          
-          {post['brief']}
-          """
+              blog_section = f"## Latest Blog Post\n\n🔖 [{post['title']}](https://vinyldavyl.hashnode.dev/{post['slug']})\n\n{post['brief']}\n"
               
               # Update or add blog section
               if '## Latest Blog Post' in content:
