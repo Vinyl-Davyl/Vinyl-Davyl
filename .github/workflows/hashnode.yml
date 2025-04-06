@@ -1,87 +1,17 @@
-name: Update README with Latest Blog Post
+name: Latest blog post workflow
 on:
-  schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight
-  workflow_dispatch:
+  schedule: # Run workflow automatically
+    - cron: '0 2 * * *' # Runs at 2am UTC
+  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
+permissions:
+  contents: write # To write the generated contents to the readme
 
 jobs:
-  update-readme:
+  update-readme-with-blog:
+    name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.x"
-
-      - name: Install requests
-        run: pip install requests
-
-      - name: Update README
-        run: |
-          python - <<EOF
-          import requests
-          import re
-
-          # Fetch latest post from Hashnode
-          query = """
-          {
-            user(username: "vinyldavyl") {
-              publication {
-                posts(page: 0) {
-                  title
-                  brief
-                  slug
-                }
-              }
-            }
-          }
-          """
-
-          response = requests.post('https://api.hashnode.com/', json={'query': query})
-          data = response.json()
-          
-          if 'data' in data and data['data']['user']['publication']['posts']:
-              post = data['data']['user']['publication']['posts'][0]
-              
-              # Read README
-              with open('README.md', 'r') as f:
-                  content = f.read()
-              
-              # Prepare new blog section
-              blog_section = f"## Latest Blog Post\n\n🔖 [{post['title']}](https://vinyldavyl.hashnode.dev/{post['slug']})\n\n{post['brief']}\n"
-              
-              # Update or add blog section
-              if '## Latest Blog Post' in content:
-                  pattern = r'## Latest Blog Post[\s\S]*?(?=##|$)'
-                  content = re.sub(pattern, blog_section, content)
-              else:
-                  content += f"\n\n{blog_section}"
-              
-              # Write updated content
-              with open('README.md', 'w') as f:
-                  f.write(content)
-          EOF
-
-      - name: Commit and push if changed
-        run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
-          git add README.md
-          
-          # Check if there are changes to commit
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-          
-          # Fetch latest changes from origin
-          git pull origin main --rebase
-          
-          # Commit and push
-          git commit -m "Update README with latest blog post"
-          git push origin main
+          feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
