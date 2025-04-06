@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -69,5 +72,16 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update README with latest blog post"
-          git push
+          
+          # Check if there are changes to commit
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          # Fetch latest changes from origin
+          git pull origin main --rebase
+          
+          # Commit and push
+          git commit -m "Update README with latest blog post"
+          git push origin main
