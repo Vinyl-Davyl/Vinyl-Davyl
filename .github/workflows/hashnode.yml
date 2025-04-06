@@ -1,89 +1,78 @@
-name: 📚 Latest Blog Post workflow
+name: Update README with Latest Blog Post
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs once a day at midnight
+    - cron: '0 0 * * *'  # Runs daily at midnight
   workflow_dispatch:
 
 jobs:
-  update-readme-with-hashnode-blog:
-    name: Update README with latest Hashnode blog post
+  update-readme:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          node-version: '16'
-          
-      - name: Install dependencies
+          python-version: '3.x'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Update README
         run: |
-          npm install axios
-          
-      - name: Update README with latest blog post
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          node -e "
-          const axios = require('axios');
-          const fs = require('fs');
-          const { execSync } = require('child_process');
-          
-          async function updateReadme() {
-            try {
-              const response = await axios.post('https://api.hashnode.com/', {
-                query: \`
-                  query {
-                    user(username: \"vinyldavyl\") {
-                      publication {
-                        posts(page: 0) {
-                          title
-                          slug
-                          dateAdded
-                          brief
-                        }
-                      }
-                    }
-                  }
-                \`
-              });
-              
-              const posts = response.data.data.user.publication.posts;
-              if (posts.length > 0) {
-                const latestPost = posts[0];
-                const readmePath = 'README.md';
-                let readmeContent = fs.readFileSync(readmePath, 'utf8');
-                
-                // Create blog post section if it doesn't exist
-                if (!readmeContent.includes('## Latest Blog Post')) {
-                  readmeContent += '\n\n## Latest Blog Post\n';
+          python - <<EOF
+          import requests
+          import re
+
+          # Fetch latest post from Hashnode
+          query = """
+          {
+            user(username: "vinyldavyl") {
+              publication {
+                posts(page: 0) {
+                  title
+                  brief
+                  slug
                 }
-                
-                // Update the blog post section
-                const blogPostContent = \`
-### [\${latestPost.title}](https://vinyldavyl.hashnode.dev/\${latestPost.slug})
-\${latestPost.brief}
-\`;
-                
-                readmeContent = readmeContent.replace(
-                  /## Latest Blog Post[\s\S]*?(?=##|$)/,
-                  \`## Latest Blog Post\n\n\${blogPostContent}\`
-                );
-                
-                fs.writeFileSync(readmePath, readmeContent);
-                
-                // Commit and push changes
-                execSync('git config --global user.name "GitHub Action"');
-                execSync('git config --global user.email "action@github.com"');
-                execSync('git add README.md');
-                execSync('git commit -m "Update latest blog post"');
-                execSync('git push');
               }
-            } catch (error) {
-              console.error('Error:', error.message);
-              process.exit(1);
             }
           }
+          """
           
-          updateReadme();
-          "
+          response = requests.post('https://api.hashnode.com/', json={'query': query})
+          data = response.json()
+          
+          if 'data' in data and data['data']['user']['publication']['posts']:
+              post = data['data']['user']['publication']['posts'][0]
+              
+              # Read README
+              with open('README.md', 'r') as f:
+                  content = f.read()
+              
+              # Prepare new blog section
+              blog_section = f"""## Latest Blog Post
+              
+          🔖 [{post['title']}](https://vinyldavyl.hashnode.dev/{post['slug']})
+          
+          {post['brief']}
+          """
+              
+              # Update or add blog section
+              if '## Latest Blog Post' in content:
+                  pattern = r'## Latest Blog Post[\s\S]*?(?=##|$)'
+                  content = re.sub(pattern, blog_section, content)
+              else:
+                  content += f"\n\n{blog_section}"
+              
+              # Write updated content
+              with open('README.md', 'w') as f:
+                  f.write(content)
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update README with latest blog post"
+          git push
