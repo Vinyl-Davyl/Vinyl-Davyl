@@ -29,13 +29,13 @@ document.write("Hello World");
 
 var status = {
   learning: [Alotrn],
-  interests: [Open Source, GraphQL, Gatsby, Solidity]
+  interests: [Open Source, GraphQL, Gatsby, Golang]
 }
 
 const skills = {
-  languages: [JavaScript, TypeScript, Python],
+  languages: [JavaScript, TypeScript, Python, Solidity],
 
-  frameworks: [ReactJs, NextJs, VueJs, Tailwind, Astro, ExpressJs, NodeJs],
+  frameworks: [ReactJs, NextJs, VueJs, Tailwind, Astro, ExpressJs, NodeJs, Electron],
 
   databases: [MySQL, PostgreSQL, Firebase, MongoDB],
 
