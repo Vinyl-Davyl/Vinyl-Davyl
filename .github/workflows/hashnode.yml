@@ -1,17 +1,54 @@
+# name: Latest blog post workflow
+# on:
+#   schedule: # Run workflow automatically
+#     - cron: '0 2 * * *' # Runs at 2am UTC
+#   workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
+# permissions:
+#   contents: write # To write the generated contents to the readme
+
+# jobs:
+#   update-readme-with-blog:
+#     name: Update this repo's README with latest blog posts
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: gautamkrishnar/blog-post-workflow@master
+#         with:
+#           feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
+
 name: Latest blog post workflow
+
 on:
-  schedule: # Run workflow automatically
-    - cron: '0 2 * * *' # Runs at 2am UTC
-  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
+  schedule:
+   - cron: "*/1 * * * *" # testing: runs every 1 minute
+    # - cron: '0 2 * * *' Runs daily at 2am UTC
+  workflow_dispatch:
+
 permissions:
-  contents: write # To write the generated contents to the readme
+  contents: write
 
 jobs:
   update-readme-with-blog:
-    name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: gautamkrishnar/blog-post-workflow@master
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install node-fetch@2
+
+      - name: Update README with latest blog posts
+        run: node .github/scripts/update-blog.js
+
+      - name: Commit & Push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "chore: update blog posts"
+          git push
+
