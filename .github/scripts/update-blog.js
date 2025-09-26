@@ -3,8 +3,7 @@ const fetch = require("node-fetch");
 
 const README_FILE = "README.md";
 
-// hashnode username
-const USERNAME = "vinyldavyl";
+const USERNAME = "Vinyl-Davyl";
 
 // GraphQL query
 const query = `
