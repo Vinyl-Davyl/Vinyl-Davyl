@@ -2,17 +2,18 @@ const fs = require("fs");
 const fetch = require("node-fetch");
 
 const README_FILE = "README.md";
+const USERNAME = "vinyldavyl"; 
 
-const USERNAME = "Vinyl-Davyl";
-
-// GraphQL query
+// GraphQL query for v2
 const query = `
-{
-  user(username: "${USERNAME}") {
-    publication {
-      posts(page: 0) {
-        title
-        slug
+query {
+  publication(host: "${USERNAME}.hashnode.dev") {
+    posts(first: 5) {
+      edges {
+        node {
+          title
+          slug
+        }
       }
     }
   }
@@ -20,14 +21,19 @@ const query = `
 `;
 
 async function fetchPosts() {
-  const response = await fetch("https://api.hashnode.com/", {
+  const response = await fetch("https://gql.hashnode.com", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ query }),
   });
 
   const data = await response.json();
-  return data.data.user.publication.posts.slice(0, 5); // limit to 5 posts
+
+  if (!data.data.publication) {
+    throw new Error("No publication found. Check your username/host.");
+  }
+
+  return data.data.publication.posts.edges.map((edge) => edge.node);
 }
 
 function updateReadme(posts) {
@@ -36,8 +42,9 @@ function updateReadme(posts) {
   const start = "<!-- BLOG-POST-LIST:START -->";
   const end = "<!-- BLOG-POST-LIST:END -->";
 
-  const newContent =
-    posts.map((p) => `- [${p.title}](https://vinyldavyl.hashnode.dev/${p.slug})`).join("\n");
+  const newContent = posts
+    .map((p) => `- [${p.title}](https://${USERNAME}.hashnode.dev/${p.slug})`)
+    .join("\n");
 
   const updated = readme.replace(
     new RegExp(`${start}[\\s\\S]*${end}`, "m"),
@@ -53,7 +60,7 @@ function updateReadme(posts) {
     updateReadme(posts);
     console.log("✅ README updated with latest blog posts");
   } catch (err) {
-    console.error("❌ Error updating README:", err);
+    console.error("❌ Error updating README:", err.message);
     process.exit(1);
   }
 })();
