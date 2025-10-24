@@ -73,10 +73,10 @@ console.log("Professional Philosophy:", professionalPhilosophy);
 
 <!-- BLOG-POST-LIST:START -->
 - [Migrating 120k+ Lines of Legacy Banking JavaScript to TypeScript with Zero Downtime](https://vinyldavyl.hashnode.dev/migrating-120k-lines-of-legacy-banking-javascript-to-typescript-with-zero-downtime)
-- [2024: Order in Chaos, Happier than ever.](https://vinyldavyl.hashnode.dev/2024-order-in-chaos-happier-than-ever)
 - [Google Summer of Code: Getting Selected, My Time, My Experience, My Journey.](https://vinyldavyl.hashnode.dev/google-summer-of-code-getting-selected-my-time-my-experience-my-journey)
 - [What Are Web Workers and How to Leverage Them for Optimized Frontend Performance](https://vinyldavyl.hashnode.dev/what-are-web-workers-and-how-to-leverage-them-for-optimized-frontend-performance)
 - [The Ultimate Guide to Styling with CSS-in-JS Using Styled Components](https://vinyldavyl.hashnode.dev/the-ultimate-guide-to-styling-with-css-in-js-using-styled-components)
+- [Understanding the Role of Husky, ESLint and Prettier: Reasons for Adoption and Implementation Guidelines](https://vinyldavyl.hashnode.dev/understanding-the-role-of-husky-eslint-and-prettier-reasons-for-adoption-and-implementation-guidelines)
 <!-- BLOG-POST-LIST:END -->
 ---
 <br/>
