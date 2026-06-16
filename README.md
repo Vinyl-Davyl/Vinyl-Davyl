@@ -14,7 +14,7 @@
 
 ### about
 
-design engineer, frontend and full-stack product engineer building scalable, performant systems across fintech, ai, and web3 and more.
+design engineer, frontend and full-stack product engineer building scalable, performant systems across fintech, ai, web3 and more.
 
 continuous learner and open source contributor focused on clean architecture, product taste, and shipping work that holds up in production.
 
@@ -38,7 +38,7 @@ tooling       docker · prisma · jest · gsap · vercel
 
 ### the nothing
 
-- i believe the best work comes from breaking things and rebuilding them better
+- believe the best work comes from breaking things and rebuilding them better
 - happiest collaborating with other builders and contributing to open source
 - driven by equal parts curiosity and creativity
 - before vinyl, there was sirholmes
