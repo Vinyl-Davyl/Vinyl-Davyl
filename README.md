@@ -38,7 +38,7 @@ tooling       docker · prisma · jest · gsap · vercel
 
 ### the nothing
 
-- believe the best work comes from breaking things and rebuilding them better
+- believes best work comes from breaking things and rebuilding them better
 - happiest collaborating with other builders and contributing to open source
 - driven by equal parts curiosity and creativity
 - before vinyl, there was sirholmes
