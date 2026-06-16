@@ -12,8 +12,6 @@
   <a href="https://twitter.com/Vinylchi">twitter</a>
 </p>
 
----
-
 ### about
 
 design engineer, frontend and full-stack product engineer building scalable, performant systems across fintech, ai, and web3 and more.
@@ -21,8 +19,6 @@ design engineer, frontend and full-stack product engineer building scalable, per
 continuous learner and open source contributor focused on clean architecture, product taste, and shipping work that holds up in production.
 
 currently exploring → open source · graphql · golang
-
----
 
 ### tech stack
 
@@ -34,15 +30,11 @@ databases     postgresql · mysql · mongodb · firebase
 tooling       docker · prisma · jest · gsap · vercel
 ```
 
----
-
 ### github stats
 
 <img height="180" src="https://github-readme-stats.vercel.app/api?username=Vinyl-Davyl&count_private=true&show_icons=true&hide_border=true&theme=transparent" alt="stats" />
 
 <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=Vinyl-Davyl&hide_border=true&theme=transparent" alt="streak" />
-
----
 
 ### the nothing
 
@@ -50,8 +42,6 @@ tooling       docker · prisma · jest · gsap · vercel
 - happiest collaborating with other builders and contributing to open source
 - driven by equal parts curiosity and creativity
 - before vinyl, there was sirholmes
-
----
 
 ### writings
 
@@ -62,8 +52,6 @@ tooling       docker · prisma · jest · gsap · vercel
 - [the ultimate guide to styling with css-in-js using styled components](https://vinyldavyl.hashnode.dev/the-ultimate-guide-to-styling-with-css-in-js-using-styled-components)
 - [understanding the role of husky, eslint and prettier](https://vinyldavyl.hashnode.dev/understanding-the-role-of-husky-eslint-and-prettier-reasons-for-adoption-and-implementation-guidelines)
 <!-- BLOG-POST-LIST:END -->
-
----
 
 <sub>open to interesting problems and collaboration → reach me via <a href="mailto:okononfuadavid@gmail.com">mail</a> or any link above.</sub>
 
