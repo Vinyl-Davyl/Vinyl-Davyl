@@ -1,90 +1,74 @@
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Vinyl-Davyl" alt="Vinyl-Chi" /> </p>
+<p align="center">
+  <img width="754" height="188" alt="vinyl-davyl" src="https://github.com/user-attachments/assets/18ea5f03-e35b-42fe-b00c-6c97e4990a70" />
+</p>
 
 <p align="center">
-<br><img src="https://github.com/chiraag-kakar/chiraag-kakar/blob/master/hadder.gif" width="280px"><br><br>
+  <img src="https://komarev.com/ghpvc/?username=Vinyl-Davyl&label=profile%20views&color=0e75b6&style=flat" alt="profile views" />
 </p>
-<h3 align="right"> Connect with me :</h3>
-<a href="https://www.linkedin.com/in/david-okononfua-a88a1a1a8/">
-  <img align="right" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png"/>
-</a>
-<a href="https://vinyldavyl.hashnode.dev">
-  <img align="right" src="https://github.com/dephraiim/hacknode/blob/345ccd76108f9cc43430e606ee7dcf3030646dbe/assets/hashnode.png" width="22px">
-</a>
-<a href="https://www.instagram.com/vinyl_davyl/">
-  <img alt="" align="right" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"/>
-</a>
-<a href="https://twitter.com/Vinylchi">
-  <img align="right" width="22px" src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg"/>
-</a>
-<a href="https://wa.me/2349122307761">
-  <img align="right" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/whatsapp.svg"/>
-</a>
-<br/>
-<br/>
-<h2 align="center">Hi 👋, I'm Vinyl Davyl</h1>
 
-```js
+<p align="center">
+  <a href="https://www.linkedin.com/in/david-okononfua-a88a1a1a8/">linkedin</a> &nbsp;·&nbsp;
+  <a href="https://vinyldavyl.hashnode.dev">blog</a> &nbsp;·&nbsp;
+  <a href="https://twitter.com/Vinylchi">twitter</a>
+</p>
 
-document.write("Hello World");
+---
 
-var status = {
-  learning: [Alotrn],
-  interests: [Open Source, GraphQL, Gatsby, Golang]
-}
+### about
 
-const skills = {
-  languages: [JavaScript, TypeScript, Python, Solidity],
+design engineer, frontend and full-stack product engineer building scalable, performant systems across fintech, ai, and web3.
 
-  frameworks: [ReactJs, NextJs, VueJs, Tailwind, Astro, ExpressJs, NodeJs, Electron],
+continuous learner and open source contributor focused on clean architecture, product taste, and shipping work that holds up in production.
 
-  databases: [MySQL, PostgreSQL, Firebase, MongoDB],
+currently exploring → open source · graphql · golang
 
-  platforms: [Hashnode, Medium, Netlify, Vercel, Heroku],
+---
 
-  tools: [Gitbash, GitHub, Gsap, Docker, PrismaORM, Jest]
-}
+### tech stack
 
-const professionalPhilosophy = {
-  mindset: "Continuous Learning and Improvement",
-  approach: "Collaborative and Open Source Minded",
-  goals: "Building Scalable and Performant Solutions"
-}
-
-console.log("Professional Philosophy:", professionalPhilosophy);
+```
+languages     typescript · javascript · python · solidity
+frontend      react · next.js · vue.js · tailwind · astro
+backend       python · node.js · nest.js · express · electron
+databases     postgresql · mysql · mongodb · firebase
+tooling       docker · prisma · jest · gsap · vercel
 ```
 
- <img alt="My Github-Stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-stats.vercel.app/api?username=Vinyl-Davyl&count_private=true&show_icons=true&hide_border=true&theme=react" href="https://github.com/Vinyl-Davyl"/>
-<!--<a href="https://github.com/Vinyl-Davyl">
-    <img src="https://github-stats-alpha.vercel.app/api?username=Vinyl-Davyl&cc=22272e&tc=37BCF6&ic=fff&bc=0000">
-</a>-->
+---
+
+### github stats
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=Vinyl-Davyl&count_private=true&show_icons=true&hide_border=true&theme=transparent" alt="stats" />
+
+<img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=Vinyl-Davyl&hide_border=true&theme=transparent" alt="streak" />
 
 ---
 
-### The Nothing!
+### the nothing
 
--  ⚡ Drive: Maybe, we are suppose to break, so through the cracks our flowers can grow
--  📫 Is there a Gig? Or an urgent deal? Hit me up through my Mail, Twitter or Linkedin
--  👨🏽‍🍳 Looking to collaborate with other devs whilst exploring opensource
--  💬 Before Vinyl, there was SirHolmes
--  ✨ Why chase, when I'm the catch..
--  🎍 Curiosity or Creativity!
-  
-### Occasional ✒️ Piece
+- i believe the best work comes from breaking things and rebuilding them better
+- happiest collaborating with other builders and contributing to open source
+- driven by equal parts curiosity and creativity
+- before vinyl, there was sirholmes
+
+---
+
+### writings
 
 <!-- BLOG-POST-LIST:START -->
-- [Migrating 120k+ Lines of Legacy Banking JavaScript to TypeScript with Zero Downtime](https://vinyldavyl.hashnode.dev/migrating-120k-lines-of-legacy-banking-javascript-to-typescript-with-zero-downtime)
-- [Google Summer of Code: Getting Selected, My Time, My Experience, My Journey.](https://vinyldavyl.hashnode.dev/google-summer-of-code-getting-selected-my-time-my-experience-my-journey)
-- [What Are Web Workers and How to Leverage Them for Optimized Frontend Performance](https://vinyldavyl.hashnode.dev/what-are-web-workers-and-how-to-leverage-them-for-optimized-frontend-performance)
-- [The Ultimate Guide to Styling with CSS-in-JS Using Styled Components](https://vinyldavyl.hashnode.dev/the-ultimate-guide-to-styling-with-css-in-js-using-styled-components)
-- [Understanding the Role of Husky, ESLint and Prettier: Reasons for Adoption and Implementation Guidelines](https://vinyldavyl.hashnode.dev/understanding-the-role-of-husky-eslint-and-prettier-reasons-for-adoption-and-implementation-guidelines)
+- [migrating 120k+ lines of legacy banking javascript to typescript with zero downtime](https://vinyldavyl.hashnode.dev/migrating-120k-lines-of-legacy-banking-javascript-to-typescript-with-zero-downtime)
+- [google summer of code: getting selected, my journey](https://vinyldavyl.hashnode.dev/google-summer-of-code-getting-selected-my-time-my-experience-my-journey)
+- [what are web workers and how to leverage them for optimized frontend performance](https://vinyldavyl.hashnode.dev/what-are-web-workers-and-how-to-leverage-them-for-optimized-frontend-performance)
+- [the ultimate guide to styling with css-in-js using styled components](https://vinyldavyl.hashnode.dev/the-ultimate-guide-to-styling-with-css-in-js-using-styled-components)
+- [understanding the role of husky, eslint and prettier](https://vinyldavyl.hashnode.dev/understanding-the-role-of-husky-eslint-and-prettier-reasons-for-adoption-and-implementation-guidelines)
 <!-- BLOG-POST-LIST:END -->
----
-<br/>
 
-<!----## [![@VinylDavyl's Holopin board](https://holopin.io/api/user/board?user=vinyldavyl01)](https://holopin.io/@vinyldavyl01) -->
-<!----## 🏆Coming Soon GitHub Trophies / Top Language stats / Spotify ---->
-<!----## Soon ![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4) -->
-<!---- ## Soon ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vinyl-Davyl&layout=compact&theme=radical)](https://github.com/Vinyl-Davyl/github-readme-stats) -->
-<!-- **🎧 My recently played** [![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=60c4w28s5vmzo03qrlssmief6&count=3)](https://open.spotify.com/user/k2sogigjc6sw1j7yxzzr3b78u) [![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=k2sogigjc6sw1j7yxzzr3b78u&count=3)](https://open.spotify.com/user/k2sogigjc6sw1j7yxzzr3b78u)-->
-<img alt="My Github stats" align="center" border-radius="40px" width="800px" height="200px" src="https://github-readme-streak-stats.herokuapp.com/?user=Vinyl-Davyl&layout=compact" alt="Vinyl-Davyl"/>
-<img height="120" alt="Thanks for visiting my profile" width="100%" src="https://github.com/dibyendu415/dibyendu415/blob/master/marquee.svg" />
+---
+
+<sub>open to interesting problems and collaboration → reach me via <a href="mailto:okononfuadavid@gmail.com">mail</a> or any link above.</sub>
+
+<!-- ## [![@VinylDavyl's Holopin board](https://holopin.io/api/user/board?user=vinyldavyl01)](https://holopin.io/@vinyldavyl01) -->
+<!-- ## 🏆 Coming Soon — GitHub Trophies / Top Language stats / Spotify -->
+<!-- ## ![](https://github-profile-trophy.vercel.app/?username=Vinyl-Davyl&theme=dark&no-frame=false&no-bg=false&margin-w=4) -->
+<!-- ## [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vinyl-Davyl&layout=compact&theme=radical)](https://github.com/Vinyl-Davyl/github-readme-stats) -->
+<!-- **🎧 My recently played** [![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=60c4w28s5vmzo03qrlssmief6&count=3)](https://open.spotify.com/user/k2sogigjc6sw1j7yxzzr3b78u) -->
