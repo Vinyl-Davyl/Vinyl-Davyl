@@ -14,7 +14,7 @@
 
 ### about
 
-design engineer, frontend and full-stack product engineer building scalable, performant systems across fintech, ai, web3 and more.
+design engineer, ux and full-stack product engineer building scalable, performant systems across fintech, ai, web3 and more.
 
 continuous learner and open source contributor focused on clean architecture, product taste, and shipping work that holds up in production.
 
