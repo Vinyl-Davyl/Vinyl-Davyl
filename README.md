@@ -24,9 +24,9 @@ currently exploring → open source · graphql · golang
 
 ```
 languages     typescript · javascript · python · solidity
-frontend      react · next.js · vue.js · tailwind · astro
-backend       python · node.js · nest.js · express · electron
-databases     postgresql · mysql · mongodb · firebase
+frontend      react · next.js · vue.js · tailwind · astro · electron
+backend       python · fastapi · node.js · nest.js · express
+databases     postgresql · mysql · aws · mongodb · firebase
 tooling       docker · prisma · jest · gsap · vercel
 ```
 
