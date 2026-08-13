@@ -18,12 +18,12 @@ design engineer, ux and full-stack product engineer building scalable, performan
 
 continuous learner and open source contributor focused on clean architecture, product taste, and shipping work that holds up in production.
 
-currently exploring → open source · graphql · golang
+currently exploring → open source · graphql
 
 ### tech stack
 
 ```
-languages     typescript · javascript · python · solidity
+languages     typescript · javascript · python · golang · solidity
 frontend      react · next.js · vue.js · tailwind · astro · electron
 backend       python · fastapi · node.js · nest.js · express
 databases     postgresql · mysql · aws · mongodb · firebase
