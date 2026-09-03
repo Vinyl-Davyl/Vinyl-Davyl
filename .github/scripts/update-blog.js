@@ -27,9 +27,21 @@ async function fetchPosts() {
     body: JSON.stringify({ query }),
   });
 
+  // Check HTTP status first
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+
+  // Validate content type
+  const contentType = response.headers.get("content-type");
+  if (!contentType || !contentType.includes("application/json")) {
+    const text = await response.text();
+    throw new Error(`Expected JSON but got ${contentType}. Response: ${text.substring(0, 100)}`);
+  }
+
   const data = await response.json();
 
-  if (!data.data.publication) {
+  if (!data.data?.publication) {
     throw new Error("No publication found. Check your username/host.");
   }
 
