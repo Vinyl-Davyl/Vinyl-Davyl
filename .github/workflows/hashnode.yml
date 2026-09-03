@@ -1,3 +1,4 @@
+# ============ hashnode.yml ============
 # name: Latest blog post workflow
 # on:
 #   schedule: # Run workflow automatically
@@ -5,7 +6,6 @@
 #   workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
 # permissions:
 #   contents: write # To write the generated contents to the readme
-
 # jobs:
 #   update-readme-with-blog:
 #     name: Update this repo's README with latest blog posts
@@ -15,28 +15,23 @@
 #       - uses: gautamkrishnar/blog-post-workflow@master
 #         with:
 #           feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
-
 name: Latest blog post workflow
-
 on:
   schedule:
   - cron: '0 2 * * *'  # Runs daily at 2am UTC
   workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   update-readme-with-blog:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - name: Update README with latest blog posts
         uses: gautamkrishnar/blog-post-workflow@master
         with:
           feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
-
+          item_exec: "post.title = post.title.toLowerCase();"
       - name: Commit & Push changes
         run: |
           git config --global user.name 'github-actions[bot]'
