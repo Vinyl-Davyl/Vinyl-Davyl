@@ -32,16 +32,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm install node-fetch@2
-
       - name: Update README with latest blog posts
-        run: node .github/scripts/update-blog.js
+        uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
 
       - name: Commit & Push changes
         run: |
@@ -50,4 +44,3 @@ jobs:
           git add README.md
           git commit -m "chore: update latest blog posts" || echo "chore: no changes to commit"
           git push
-
