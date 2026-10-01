@@ -1,28 +1,24 @@
-# ============ hashnode.yml ============
-# name: Latest blog post workflow
-# on:
-#   schedule: # Run workflow automatically
-#     - cron: '0 2 * * *' # Runs at 2am UTC
-#   workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
-# permissions:
-#   contents: write # To write the generated contents to the readme
-# jobs:
-#   update-readme-with-blog:
-#     name: Update this repo's README with latest blog posts
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - uses: gautamkrishnar/blog-post-workflow@master
-#         with:
-#           feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
 name: Latest blog post workflow
+
 on:
   schedule:
-@@ -26,16 +9,25 @@ jobs:
+    # Run every day at 2am UTC
+    - cron: "0 2 * * *"
+
+  # Allow manual runs from GitHub Actions
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
   update-readme-with-blog:
+    name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Update README with latest blog posts
         uses: gautamkrishnar/blog-post-workflow@master
@@ -30,10 +26,11 @@ on:
           feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
           item_exec: "post.title = post.title.toLowerCase();"
 
-      - name: Commit & Push changes
+      - name: Commit and push changes
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
           git add README.md
-          git commit -m "chore: update latest blog posts" || echo "chore: no changes to commit"
+          git commit -m "chore: update latest blog posts" || echo "No changes to commit"
           git push
