@@ -1,31 +1,77 @@
 name: Latest blog post workflow
+
 on:
   schedule:
-  - cron: '0 2 * * *'  # Runs daily at 2am UTC
+    - cron: '0 2 * * *'
   workflow_dispatch:
+
 permissions:
   contents: write
+
 jobs:
   update-readme-with-blog:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Update README with latest blog posts
-        uses: gautamkrishnar/blog-post-workflow@v1
-        with:
-          feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
-          item_exec: "post.title = post.title.toLowerCase();"
-          committer_username: "github-actions[bot]"
-          committer_email: "github-actions[bot]@users.noreply.github.com"
-      
-      - name: Commit & Push changes
+
+      - name: Fetch latest Hashnode posts and update README
+        env:
+          FEED_URL: "https://vinyldavyl.hashnode.dev/rss.xml"
+        shell: bash
         run: |
-          if git diff --quiet README.md; then
-            echo "No changes to commit"
+          set -euo pipefail
+
+          mkdir -p .tmp
+          curl -fsSL \
+            -A "Mozilla/5.0 (compatible; GitHubActions/1.0; +https://github.com/actions)" \
+            -H "Accept: application/rss+xml, application/xml;q=0.9, */*;q=0.8" \
+            "$FEED_URL" -o .tmp/feed.xml
+
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          feed_path = Path(".tmp/feed.xml")
+          readme_path = Path("README.md")
+
+          root = ET.parse(feed_path).getroot()
+          items = root.findall("./channel/item")[:5]
+
+          posts = []
+          for item in items:
+              title = (item.findtext("title") or "").strip()
+              link = (item.findtext("link") or "").strip()
+              if title and link:
+                  posts.append(f"- [{title.lower()}]({link})")
+
+          if not posts:
+              raise SystemExit("No feed items found")
+
+          start = "<!-- BLOG-POST-LIST:START -->"
+          end = "<!-- BLOG-POST-LIST:END -->"
+          block = f"{start}\n" + "\n".join(posts) + f"\n{end}"
+
+          text = readme_path.read_text(encoding="utf-8")
+          if start in text and end in text:
+              before, _ = text.split(start, 1)
+              _, after = text.split(end, 1)
+              updated = before + block + after
+          else:
+              raise SystemExit("README is missing BLOG-POST-LIST markers")
+
+          readme_path.write_text(updated, encoding="utf-8")
+          PY
+
+      - name: Commit & push README updates
+        shell: bash
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          if git diff --quiet -- README.md; then
+            echo "No README changes to commit"
           else
-            git config --global user.name 'github-actions[bot]'
-            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
             git add README.md
             git commit -m "chore: update latest blog posts"
             git push
