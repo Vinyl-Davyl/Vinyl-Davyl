@@ -1,20 +1,3 @@
-# ============ hashnode.yml ============
-# name: Latest blog post workflow
-# on:
-#   schedule: # Run workflow automatically
-#     - cron: '0 2 * * *' # Runs at 2am UTC
-#   workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
-# permissions:
-#   contents: write # To write the generated contents to the readme
-# jobs:
-#   update-readme-with-blog:
-#     name: Update this repo's README with latest blog posts
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - uses: gautamkrishnar/blog-post-workflow@master
-#         with:
-#           feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
 name: Latest blog post workflow
 on:
   schedule:
@@ -26,16 +9,25 @@ jobs:
   update-readme-with-blog:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      
       - name: Update README with latest blog posts
-        uses: gautamkrishnar/blog-post-workflow@master
+        uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
           item_exec: "post.title = post.title.toLowerCase();"
+          committer_username: "github-actions[bot]"
+          committer_email: "github-actions[bot]@users.noreply.github.com"
+        continue-on-error: true
+      
       - name: Commit & Push changes
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add README.md
-          git commit -m "chore: update latest blog posts" || echo "chore: no changes to commit"
-          git push
+          if git diff --quiet README.md; then
+            echo "No changes to commit"
+          else
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add README.md
+            git commit -m "chore: update latest blog posts"
+            git push
+          fi
