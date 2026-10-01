@@ -1,114 +1,42 @@
+# ============ hashnode.yml ============
+# name: Latest blog post workflow
+# on:
+#   schedule: # Run workflow automatically
+#     - cron: '0 2 * * *' # Runs at 2am UTC
+#   workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
+# permissions:
+#   contents: write # To write the generated contents to the readme
+# jobs:
+#   update-readme-with-blog:
+#     name: Update this repo's README with latest blog posts
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: gautamkrishnar/blog-post-workflow@master
+#         with:
+#           feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
 name: Latest blog post workflow
-
 on:
   schedule:
-    - cron: '0 2 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
+@@ -26,16 +9,25 @@ jobs:
   update-readme-with-blog:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
-      - name: Fetch latest Hashnode posts and update README
-        env:
-          FEED_URL: "https://vinyldavyl.hashnode.dev/rss.xml"
-        shell: bash
-        run: |
-          set -uo pipefail
+      - name: Update README with latest blog posts
+        uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
+          item_exec: "post.title = post.title.toLowerCase();"
 
-          mkdir -p .tmp
 
-          ENCODED=$(python3 -c "import urllib.parse,os;print(urllib.parse.quote(os.environ['FEED_URL'],safe=''))")
 
-          # Direct first, then public read-only proxies if Hashnode blocks the runner IP
-          SOURCES=(
-            "$FEED_URL"
-            "https://api.codetabs.com/v1/proxy?quest=${ENCODED}"
-            "https://api.allorigins.win/raw?url=${ENCODED}"
-            "https://corsproxy.io/?${ENCODED}"
-          )
 
-          FETCHED=0
-          for SRC in "${SOURCES[@]}"; do
-            echo "Fetching: ${SRC:0:80}..."
-
-            CODE=$(curl -sS -L -w "%{http_code}" --max-time 45 \
-              -A "Mozilla/5.0 (compatible; GitHubActions/1.0; +https://github.com/actions)" \
-              -H "Accept: application/rss+xml, application/xml;q=0.9, */*;q=0.8" \
-              "$SRC" -o .tmp/feed.xml) || CODE="000"
-
-            echo "  HTTP $CODE"
-
-            if [ "$CODE" = "200" ] && grep -qi "<channel" .tmp/feed.xml 2>/dev/null; then
-              echo "  Valid RSS received"
-              FETCHED=1
-              break
-            fi
-
-            echo "  Not usable, trying next source"
-            head -c 200 .tmp/feed.xml 2>/dev/null || true
-            echo ""
-          done
-
-          if [ "$FETCHED" -eq 0 ]; then
-            echo "::error::Could not fetch the RSS feed from any source"
-            exit 1
-          fi
-
-          set -e
-
-          python3 - <<'PY'
-          import xml.etree.ElementTree as ET
-          from pathlib import Path
-
-          feed_path = Path(".tmp/feed.xml")
-          readme_path = Path("README.md")
-
-          root = ET.parse(feed_path).getroot()
-          items = root.findall("./channel/item")[:5]
-
-          posts = []
-          for item in items:
-              title = (item.findtext("title") or "").strip()
-              link = (item.findtext("link") or "").strip()
-              if title and link:
-                  posts.append(f"- [{title.lower()}]({link})")
-
-          if not posts:
-              raise SystemExit("No feed items found")
-
-          start = "<!-- BLOG-POST-LIST:START -->"
-          end = "<!-- BLOG-POST-LIST:END -->"
-          block = f"{start}\n" + "\n".join(posts) + f"\n{end}"
-
-          text = readme_path.read_text(encoding="utf-8")
-          if start in text and end in text:
-              before, _ = text.split(start, 1)
-              _, after = text.split(end, 1)
-              updated = before + block + after
-          else:
-              raise SystemExit("README is missing BLOG-POST-LIST markers")
-
-          readme_path.write_text(updated, encoding="utf-8")
-          print(f"Updated README with {len(posts)} posts")
-          PY
-
-      - name: Commit & push README updates
-        shell: bash
+      - name: Commit & Push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-          if git diff --quiet -- README.md; then
-            echo "No README changes to commit"
-          else
-            git add README.md
-            git commit -m "chore: update latest blog posts"
-            git push
-          fi
+          git add README.md
+          git commit -m "chore: update latest blog posts" || echo "chore: no changes to commit"
+          git push
