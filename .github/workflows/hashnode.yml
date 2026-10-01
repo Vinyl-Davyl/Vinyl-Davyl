@@ -30,9 +30,6 @@ on:
           feed_list: "https://vinyldavyl.hashnode.dev/rss.xml"
           item_exec: "post.title = post.title.toLowerCase();"
 
-
-
-
       - name: Commit & Push changes
         run: |
           git config --global user.name 'github-actions[bot]'
