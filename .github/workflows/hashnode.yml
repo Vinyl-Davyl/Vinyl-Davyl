@@ -18,7 +18,6 @@ jobs:
           item_exec: "post.title = post.title.toLowerCase();"
           committer_username: "github-actions[bot]"
           committer_email: "github-actions[bot]@users.noreply.github.com"
-        continue-on-error: true
       
       - name: Commit & Push changes
         run: |
