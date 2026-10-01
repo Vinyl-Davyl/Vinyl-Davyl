@@ -17,148 +17,86 @@ jobs:
 
       - name: Fetch latest Hashnode posts and update README
         env:
-          HASHNODE_HOST: "vinyldavyl.hashnode.dev"
           FEED_URL: "https://vinyldavyl.hashnode.dev/rss.xml"
         shell: bash
         run: |
           set -uo pipefail
 
           mkdir -p .tmp
-          GOT_POSTS=0
 
-          # ---------- 1. Hashnode GraphQL API (primary) ----------
-          echo "::group::Trying Hashnode GraphQL API"
-          cat > .tmp/query.json <<JSON
-          {"query":"query { publication(host: \"${HASHNODE_HOST}\") { posts(first: 5) { edges { node { title slug } } } } }"}
-          JSON
+          ENCODED=$(python3 -c "import urllib.parse,os;print(urllib.parse.quote(os.environ['FEED_URL'],safe=''))")
 
-          HTTP_CODE=$(curl -sS -w "%{http_code}" --max-time 30 \
-            -X POST https://gql.hashnode.com \
-            -H "Content-Type: application/json" \
-            --data @.tmp/query.json \
-            -o .tmp/gql.json) || HTTP_CODE="000"
+          # Direct first, then public read-only proxies if Hashnode blocks the runner IP
+          SOURCES=(
+            "$FEED_URL"
+            "https://api.codetabs.com/v1/proxy?quest=${ENCODED}"
+            "https://api.allorigins.win/raw?url=${ENCODED}"
+            "https://corsproxy.io/?${ENCODED}"
+          )
 
-          echo "GraphQL HTTP status: $HTTP_CODE"
-          if [ "$HTTP_CODE" != "200" ]; then
-            echo "Response body (first 500 chars):"
-            head -c 500 .tmp/gql.json || true
+          FETCHED=0
+          for SRC in "${SOURCES[@]}"; do
+            echo "Fetching: ${SRC:0:80}..."
+
+            CODE=$(curl -sS -L -w "%{http_code}" --max-time 45 \
+              -A "Mozilla/5.0 (compatible; GitHubActions/1.0; +https://github.com/actions)" \
+              -H "Accept: application/rss+xml, application/xml;q=0.9, */*;q=0.8" \
+              "$SRC" -o .tmp/feed.xml) || CODE="000"
+
+            echo "  HTTP $CODE"
+
+            if [ "$CODE" = "200" ] && grep -qi "<channel" .tmp/feed.xml 2>/dev/null; then
+              echo "  Valid RSS received"
+              FETCHED=1
+              break
+            fi
+
+            echo "  Not usable, trying next source"
+            head -c 200 .tmp/feed.xml 2>/dev/null || true
             echo ""
-          fi
-          echo "::endgroup::"
+          done
 
-          if [ "$HTTP_CODE" = "200" ]; then
-            if python3 - <<'PY'
-          import json, os, sys
-          from pathlib import Path
-
-          host = os.environ["HASHNODE_HOST"]
-          raw = Path(".tmp/gql.json").read_text(encoding="utf-8")
-
-          try:
-              data = json.loads(raw)
-          except json.JSONDecodeError:
-              print("GraphQL response was not valid JSON")
-              sys.exit(1)
-
-          pub = (data.get("data") or {}).get("publication")
-          if not pub:
-              print(f"No publication in response: {raw[:300]}")
-              sys.exit(1)
-
-          posts = [
-              {
-                  "title": e["node"]["title"].strip(),
-                  "link": f"https://{host}/{e['node']['slug']}",
-              }
-              for e in pub["posts"]["edges"]
-          ]
-
-          if not posts:
-              print("GraphQL returned zero posts")
-              sys.exit(1)
-
-          Path(".tmp/posts.json").write_text(json.dumps(posts), encoding="utf-8")
-          print(f"GraphQL: parsed {len(posts)} posts")
-          PY
-            then
-              GOT_POSTS=1
-            fi
-          fi
-
-          # ---------- 2. RSS through a read-only proxy (fallback) ----------
-          if [ "$GOT_POSTS" -eq 0 ]; then
-            echo "::group::Falling back to RSS via proxy"
-            PROXY_URL="https://api.allorigins.win/raw?url=$(python3 -c "import urllib.parse,os;print(urllib.parse.quote(os.environ['FEED_URL'],safe=''))")"
-            echo "Proxy URL: $PROXY_URL"
-
-            HTTP_CODE=$(curl -sS -L -w "%{http_code}" --max-time 45 \
-              "$PROXY_URL" -o .tmp/feed.xml) || HTTP_CODE="000"
-
-            echo "Proxy HTTP status: $HTTP_CODE"
-            echo "::endgroup::"
-
-            if [ "$HTTP_CODE" = "200" ]; then
-              if python3 - <<'PY'
-          import xml.etree.ElementTree as ET
-          import json, sys
-          from pathlib import Path
-
-          try:
-              root = ET.parse(Path(".tmp/feed.xml")).getroot()
-          except ET.ParseError as e:
-              print(f"Could not parse feed: {e}")
-              sys.exit(1)
-
-          posts = []
-          for item in root.findall("./channel/item")[:5]:
-              title = (item.findtext("title") or "").strip()
-              link = (item.findtext("link") or "").strip()
-              if title and link:
-                  posts.append({"title": title, "link": link})
-
-          if not posts:
-              print("No items found in feed")
-              sys.exit(1)
-
-          Path(".tmp/posts.json").write_text(json.dumps(posts), encoding="utf-8")
-          print(f"RSS proxy: parsed {len(posts)} posts")
-          PY
-              then
-                GOT_POSTS=1
-              fi
-            fi
-          fi
-
-          # ---------- 3. Bail out if nothing worked ----------
-          if [ "$GOT_POSTS" -eq 0 ]; then
-            echo "::error::Could not fetch posts from GraphQL or RSS proxy"
+          if [ "$FETCHED" -eq 0 ]; then
+            echo "::error::Could not fetch the RSS feed from any source"
             exit 1
           fi
 
-          # ---------- 4. Write README ----------
           set -e
+
           python3 - <<'PY'
-          import json
+          import xml.etree.ElementTree as ET
           from pathlib import Path
 
+          feed_path = Path(".tmp/feed.xml")
           readme_path = Path("README.md")
-          posts = json.loads(Path(".tmp/posts.json").read_text(encoding="utf-8"))
 
-          lines = [f"- [{p['title'].lower()}]({p['link']})" for p in posts]
+          root = ET.parse(feed_path).getroot()
+          items = root.findall("./channel/item")[:5]
+
+          posts = []
+          for item in items:
+              title = (item.findtext("title") or "").strip()
+              link = (item.findtext("link") or "").strip()
+              if title and link:
+                  posts.append(f"- [{title.lower()}]({link})")
+
+          if not posts:
+              raise SystemExit("No feed items found")
 
           start = "<!-- BLOG-POST-LIST:START -->"
           end = "<!-- BLOG-POST-LIST:END -->"
-          block = f"{start}\n" + "\n".join(lines) + f"\n{end}"
+          block = f"{start}\n" + "\n".join(posts) + f"\n{end}"
 
           text = readme_path.read_text(encoding="utf-8")
-          if start not in text or end not in text:
+          if start in text and end in text:
+              before, _ = text.split(start, 1)
+              _, after = text.split(end, 1)
+              updated = before + block + after
+          else:
               raise SystemExit("README is missing BLOG-POST-LIST markers")
 
-          before, _ = text.split(start, 1)
-          _, after = text.split(end, 1)
-          readme_path.write_text(before + block + after, encoding="utf-8")
-
-          print(f"Updated README with {len(lines)} posts")
+          readme_path.write_text(updated, encoding="utf-8")
+          print(f"Updated README with {len(posts)} posts")
           PY
 
       - name: Commit & push README updates
