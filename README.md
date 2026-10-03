@@ -46,7 +46,7 @@ tooling       docker · prisma · jest · gsap · vercel
 ### writings
 
 <!-- BLOG-POST-LIST:START -->
-- [i thought i needed a database. then i needed cloudflare’s durable objects](https://vinyldavyl.hashnode.dev/i-thought-i-needed-a-database-then-i-needed-cloudflare-s-durable-objects)
+- [i thought i needed a database. then i needed cloudflare&#39;s durable objects](https://vinyldavyl.hashnode.dev/i-thought-i-needed-a-database-then-i-needed-cloudflare-s-durable-objects)
 - [ai agents are only half the product: building user-facing agentic applications with ag-ui](https://vinyldavyl.hashnode.dev/ai-agents-are-only-half-the-product-building-user-facing-agentic-applications-with-ag-ui)
 - [migrating 120k+ lines of legacy banking javascript to typescript with zero downtime](https://vinyldavyl.hashnode.dev/migrating-120k-lines-of-legacy-banking-javascript-to-typescript-with-zero-downtime)
 - [google summer of code: getting selected, my time, my experience, my journey.](https://vinyldavyl.hashnode.dev/google-summer-of-code-getting-selected-my-time-my-experience-my-journey)
